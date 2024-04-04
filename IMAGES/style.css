@@ -1,19 +1,37 @@
 body {
     background-color: rgb(20, 20, 20);
+    font-family: 'Arial', sans-serif; 
+}
+img {
+    display: block;
+    max-width: 100%;
 }
 ul {
-    background-color: rgb(20, 20, 20);
     list-style-type: none;
-    margin: 0;
+    margin: 40px auto 0;
     padding: 0;
-    position: relative;
-    top: -45px;
-    left: 450px;
+    text-align: center;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
 }
-space{
+ul li {
+    display: inline-block;
+}
+ul li a {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px; 
+}
+space {
     color: rgb(20, 20, 20);
 }
-button{
+button {
     background-color: rgb(20, 20, 20);
     box-shadow: none;
     border: none;
@@ -23,47 +41,60 @@ button{
     display: inline-block;
     cursor: pointer;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
 }
-logo{
+logo {
     display: inline-block;
 }
-.field{
+.field {
     padding: 10px;
     display: inline-block;
 }
-h1{
-    position: relative;
-    left: 25px;
+h1, h2, h3, p, episode, e1info, e2info, e3info {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1%; 
 }
-p{
-    position: relative;
-    left: 25px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-pb{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-weight: bold;
-}
-episode{
-    position: relative;
-    left: 25px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-e1info{
-    position: relative;
-    top: -60px;
-}
-e2info{
-    position: relative;
-    top: -70px;
-}
-e3info{
-    position: relative;
-    top: -70px;
-}
+
+/* Adjustments for mobile */
+@media only screen and (max-width: 600px) {
+    ul {
+        top: 15px;
+    }
+    ul li {
+        display: block; /* Display list items as block elements */
+    }
+    ul li a {
+        display: block; /* Display buttons as block elements */
+        margin: 5px auto; /* Adjust margin to lower the buttons without adding spacing */
+        padding: 10px 20px; /* Add padding to buttons */
+        text-decoration: none; /* Remove underline */
+        color: white; /* Text color */
+        font-weight: bold; /* Bold text */
+        font-size: 20px; /* Font size */
+        top: 40px;
+    }
+    h1.title1 {
+        margin-top: 150px;
+        font-size: 40px; 
+        font-weight: bold;
+        text-align: center;
+    }
+    h1.title2 {
+        margin-top: 50px; 
+        font-size: 40px; 
+        font-weight: bold;
+        text-align: center;
+    }
+    h1, h2, h3, p, episode, e1info, e2info, e3info {
+        color: white;
+        font-size: 19.2px;
+        line-height: 1.5;
+        max-width: 70ch;
+        display: block;
+        overflow-wrap: break-word; /* Enable word wrapping */
+    }
+        .mobile-line-break br {
+            display: none;
+        }
+    }
+
+
