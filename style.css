@@ -68,8 +68,83 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
     margin-left: 1%; 
 }
 
-/* Adjustments for mobile */
+/* Adjustments for smaller screens */
 @media only screen and (max-width: 1200px) {
+    ul {
+        top: 15px;
+    }
+    ul li {
+        display: block; 
+    }
+    ul li a {
+        display: block; 
+        margin: 5px auto; 
+        padding: 10px 20px; 
+        text-decoration: none; 
+        color: white; 
+        font-weight: bold; 
+        font-size: 20px; 
+        top: 40px;
+    }
+    h1.title1 {
+        margin-top: 225px;
+        font-size: 40px; 
+        font-weight: bold;
+        text-align: center;
+    }
+    h1.title2 {
+        margin-top: 50px; 
+        font-size: 40px; 
+        font-weight: bold;
+        text-align: center;
+    }
+    h1, h2, h3, p, episode, e1info, e2info, e3info {
+        color: white;
+        font-size: 19.2px;
+        line-height: 1.5;
+        max-width: 70ch;
+        display: block;
+        overflow-wrap: break-word; 
+    }
+        .mobile-line-break br {
+            display: none;
+        }
+    img {
+        display: block;
+        margin-left: 15px;
+    }
+    .discLogo {
+        display: block; 
+        margin: 5px auto; 
+        padding: 10px 20px; 
+        text-decoration: none; 
+        color: white; 
+        font-weight: bold; 
+        font-size: 20px; 
+        top: 40px;
+        background-color: rgb(20, 20, 20);
+        box-shadow: none;
+        border: none;
+        color: white;
+        text-align: center;
+    }
+    .field {
+        padding: 10px;
+    }
+    
+    .under episode {
+        display: block;
+        margin-top: 200px;
+        text-align: center;
+    }  
+    h1.credits {
+        margin-top: 250px;
+        margin-bottom: 25px; 
+    }   
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 650px) {
     ul {
         top: 15px;
     }
@@ -130,12 +205,12 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
     
     .under episode {
         display: block;
-        margin-top: 200px; /* Adjust spacing to move episodes down */
-        text-align: center; /* Align episodes in the center horizontally */
+        margin-top: 200px; 
+        text-align: center; 
     }  
     h1.credits {
         margin-top: 250px;
-        margin-bottom: 25px; /* Adjust the margin as needed */
+        margin-bottom: 25px; 
     }    
 }
 
