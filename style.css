@@ -100,8 +100,8 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
   }
   
   .episode img {
-    max-width: 500px; 
-    max-height: 250px; 
+    max-width: 480px; 
+    max-height: 360px; 
   }
   
   .romance-dawn {
@@ -224,8 +224,8 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
       }
       
       .episode img {
-        max-width: 500px; 
-        max-height: 250px; 
+        max-width: 360px; 
+        max-height: 270px; 
       }
       .episode-info-wrapper {
         margin-top: 150px; 
@@ -328,8 +328,8 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
         margin-top: auto;
       }
       .episode img {
-        max-width: 500px; 
-        max-height: 250px; 
+        max-width: 360px; 
+        max-height: 270px; 
       }
       .episode-info-wrapper {
         margin-top: 250px;
