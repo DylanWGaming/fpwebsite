@@ -1,8 +1,9 @@
+/* Basics */
 body {
     background-color: rgb(20, 20, 20);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-pb{
+.pb{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
@@ -72,8 +73,167 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
     margin-left: 1%; 
 }
 
-/* Adjustments for mobile */
-@media only screen and (max-width: 600px) {
+/* watch.html Episodes Styling */
+.episode-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Optional */
+  }
+  
+  .episode {
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .episode p {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .episode button {
+    font-size: 20px;
+    margin-top: auto;
+  }
+  
+  .episode img {
+    max-width: 500px; /* Adjust as needed */
+    max-height: 250px; /* Adjust as needed */
+  }
+  
+  .romance-dawn {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em; /* Adjust font size as needed */
+  }
+  
+  .episode button:hover {
+    background-color: #ADD8E6;
+  }
+  
+  hr {
+    margin-top: -25px;
+  }
+  
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 1200px) {
+    ul {
+        top: 15px;
+    }
+    ul li {
+        display: block; 
+    }
+    ul li a {
+        display: block; 
+        margin: 5px auto; 
+        padding: 10px 20px; 
+        text-decoration: none; 
+        color: white; 
+        font-weight: bold; 
+        font-size: 20px; 
+        top: 40px;
+    }
+    h1.title1 {
+        margin-top: 225px;
+        font-size: 40px; 
+        font-weight: bold;
+        text-align: center;
+    }
+    h1.title2 {
+        margin-top: 50px; 
+        font-size: 40px; 
+        font-weight: bold;
+        text-align: center;
+    }
+    h1, h2, h3, p, episode, e1info, e2info, e3info {
+        color: white;
+        font-size: 19.2px;
+        line-height: 1.5;
+        max-width: 70ch;
+        display: block;
+        overflow-wrap: break-word; 
+    }
+        .mobile-line-break br {
+            display: none;
+        }
+    img {
+        display: block;
+        margin-left: 15px;
+    }
+    .discLogo {
+        display: block; 
+        margin: 5px auto; 
+        padding: 10px 20px; 
+        text-decoration: none; 
+        color: white; 
+        font-weight: bold; 
+        font-size: 20px; 
+        top: 40px;
+        background-color: rgb(20, 20, 20);
+        box-shadow: none;
+        border: none;
+        color: white;
+        text-align: center;
+    }
+    .field {
+        padding: 10px;
+    }
+    
+    .under episode {
+        display: block;
+        margin-top: 200px;
+        text-align: center;
+    }  
+    h1.credits {
+        margin-top: 250px;
+        margin-bottom: 25px; 
+    }   
+    .romance-dawn {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em; /* Adjust font size as needed */
+      }
+      
+      .episode button:hover {
+        background-color: #ADD8E6;
+      }
+      
+      hr {
+        margin-top: 150px;
+      }
+      .episode {
+        margin-right: 15px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .episode p {
+        font-size: 27px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      
+      .episode button {
+        font-size: 20px;
+        margin-top: auto;
+      }
+      
+      .episode img {
+        max-width: 500px; 
+        max-height: 250px; 
+      }
+      .episode-info-wrapper {
+        margin-top: 150px; /* Adjust as needed (positive value moves down) */
+      }   
+}
+
+/* Adjustments for mobile screens */
+@media only screen and (max-width: 650px) {
     ul {
         top: 15px;
     }
@@ -119,7 +279,7 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
     }
     .discLogo {
         position: absolute;
-        right: 115px;
+        right: 75px;
         top: 280px;
         z-index: 1; 
     }
@@ -134,12 +294,50 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
     
     .under episode {
         display: block;
-        margin-top: 200px; /* Adjust spacing to move episodes down */
-        text-align: center; /* Align episodes in the center horizontally */
+        margin-top: 200px; 
+        text-align: center; 
     }  
     h1.credits {
         margin-top: 250px;
-        margin-bottom: 25px; /* Adjust the margin as needed */
+        margin-bottom: 25px; 
     }    
+    .romance-dawn {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em; /* Adjust font size as needed */
+      }
+      
+      .episode button:hover {
+        background-color: #ADD8E6;
+      }
+      
+      hr {
+        margin-top: 200px;
+      }
+      .episode {
+        margin-right: 15px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .episode p {
+        font-size: 27px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      
+      .episode button {
+        font-size: 20px;
+        margin-top: auto;
+      }
+      
+      .episode img {
+        max-width: 500px; 
+        max-height: 250px; 
+      }
+      .episode-info-wrapper {
+        margin-top: 250px; /* Adjust as needed (positive value moves down) */
+      }      
 }
-
