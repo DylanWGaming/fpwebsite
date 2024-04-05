@@ -78,7 +78,7 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; /* Optional */
+    align-items: center; 
   }
   
   .episode {
@@ -100,14 +100,14 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
   }
   
   .episode img {
-    max-width: 500px; /* Adjust as needed */
-    max-height: 250px; /* Adjust as needed */
+    max-width: 500px; 
+    max-height: 250px; 
   }
   
   .romance-dawn {
     text-align: center;
     font-weight: bold;
-    font-size: 2em; /* Adjust font size as needed */
+    font-size: 2em; 
   }
   
   .episode button:hover {
@@ -194,7 +194,7 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
     .romance-dawn {
         text-align: center;
         font-weight: bold;
-        font-size: 2em; /* Adjust font size as needed */
+        font-size: 2em; 
       }
       
       .episode button:hover {
@@ -228,7 +228,7 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
         max-height: 250px; 
       }
       .episode-info-wrapper {
-        margin-top: 150px; /* Adjust as needed (positive value moves down) */
+        margin-top: 150px; 
       }   
 }
 
@@ -278,10 +278,9 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
         margin-left: 15px;
     }
     .discLogo {
-        position: absolute;
-        right: 75px;
-        top: 280px;
-        z-index: 1; 
+      position: absolute;
+      right: 75px;
+      top: 280px;
     }
     .discLogo a {
         display: block;
@@ -291,7 +290,6 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
     .field {
         padding: 10px;
     }
-    
     .under episode {
         display: block;
         margin-top: 200px; 
@@ -304,9 +302,8 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
     .romance-dawn {
         text-align: center;
         font-weight: bold;
-        font-size: 2em; /* Adjust font size as needed */
+        font-size: 2em; 
       }
-      
       .episode button:hover {
         background-color: #ADD8E6;
       }
@@ -321,23 +318,20 @@ h1, h2, h3, p, episode, e1info, e2info, e3info {
         flex-direction: column;
         align-items: center;
       }
-      
       .episode p {
         font-size: 27px;
         font-weight: bold;
         margin-bottom: 5px;
       }
-      
       .episode button {
         font-size: 20px;
         margin-top: auto;
       }
-      
       .episode img {
         max-width: 500px; 
         max-height: 250px; 
       }
       .episode-info-wrapper {
-        margin-top: 250px; /* Adjust as needed (positive value moves down) */
+        margin-top: 250px;
       }      
 }
