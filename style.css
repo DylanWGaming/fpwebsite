@@ -11,6 +11,13 @@ img {
   display: block;
   max-width: 100%;
 }
+.under {
+  display: flex;
+  flex-direction: column;
+  .logo {
+      order: 1; 
+  }
+}
 ul {
   list-style-type: none;
   margin: 40px auto 0;
@@ -51,7 +58,10 @@ button {
   font-weight: bold;
 }
 .logo {
-margin-left: 17px;
+  position: static;
+  display: block;
+  margin-left: 17px;
+  z-index: 5;
 }
 .field {
   padding: 10px;
@@ -106,6 +116,7 @@ font-size: 32px;
 .episode img {
   max-width: 480px; 
   max-height: 360px; 
+  margin-top: 37px;
 }
 
 .romance-dawn {
@@ -139,7 +150,7 @@ hr {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #808080;
+    background-color: #7D7D7D;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 2;
@@ -147,6 +158,7 @@ hr {
 
 .dropdown-content.show {
   display: block;
+  background-color: #7D7D7D;
 }
 
 .dropdown-content a {
@@ -190,15 +202,15 @@ hr {
 }
 
 .episode-watch-btn:after {
-  content: "\25BC";
-  font-size: 12px;
-  margin-left: 5px;
-  transition: transform 0.3s ease;
+    content: "\25BC";
+    font-size: 12px;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
 }
 
 .episode-watch-btn.active:after {
-  content: "\25B2";
-  transform: rotate(180deg);
+    content: "\25B2";
+    transform: rotate(180deg);
 }
 
 .episode-number {
@@ -210,6 +222,12 @@ hr {
   border-radius: 3px;
   color: white;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 2040px) {
+  body {
+    padding-bottom: 200px;
+  }
 }
 
 /* Adjustments for smaller screens */
@@ -434,6 +452,7 @@ hr {
       .episode img {
         max-width: 360px; 
         max-height: 270px; 
+        margin-top: 0px;
       }
       .episode-info-wrapper {
         margin-top: 250px;
