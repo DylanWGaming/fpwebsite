@@ -10,7 +10,9 @@
 <body>
   <div class="field">
     <div class="under">
-      <img class="logo" src="IMAGES/FIXED_PIECE_LOGO.png" width="350" height="100">
+      <a href="index.html">
+        <img class="logo" src="IMAGES/FIXED_PIECE_LOGO.png" width="350" height="100">
+      </a>
       <a href="https://discord.gg/sBzcJ9ZdmA">
         <img class="discLogo" src="IMAGES/discord-logo-blue.png" width="225" height="40">
       </a> 
@@ -36,111 +38,55 @@
     <!-- Episode 1 -->
     <div class="episode">
       <img src="IMAGES/EP_1_Thumbnail.png" alt="Episode 1 Thumbnail">
-      </a>
       <p>Romance Dawn</p>
       <div class="dropdown">
-        <button class="episode-watch-btn" onclick="toggleDropdown('dropdown1')">Watch</button>
-        <div class="dropdown-content" id="dropdown1">
+        <button class="episode-watch-btn">Watch</button>
+        <div class="dropdown-content">
           <a href="EPISODES/Fixed_Piece_Episode_1_Chapter_1.torrent" download>Torrent</a>
         </div>
       </div>
     </div>
     <!-- Episode 2 -->
     <div class="episode">
-        <img src="IMAGES/EP_2_Thumbnail.png" alt="Episode 2 Thumbnail">
-        </a>
-        <p>The Man in the Straw Hat</p>
-        <div class="dropdown">
-          <button class="episode-watch-btn" onclick="toggleDropdown('dropdown2')">Watch</button>
-          <div class="dropdown-content" id="dropdown2">
-            <a href="EPISODES/Fixed_Piece_Episode_2_Chapter_2.torrent" download>Torrent</a>
-            <hr>
-            <a href="https://mega.nz/file/RGcykIwY#PsxwYYqpwwjtWK1Q9Iyt97sYWsvSeZm3xKlglORP-IM" target="_blank">Mega</a>
-          </div>
+      <img src="IMAGES/EP_2_Thumbnail.png" alt="Episode 2 Thumbnail">
+      <p>The Man in the Straw Hat</p>
+      <div class="dropdown">
+        <button class="episode-watch-btn">Watch</button>
+        <div class="dropdown-content">
+          <a href="EPISODES/Fixed_Piece_Episode_2_Chapter_2.torrent" download>Torrent</a>
+          <hr>
+          <a href="https://mega.nz/file/RGcykIwY#PsxwYYqpwwjtWK1Q9Iyt97sYWsvSeZm3xKlglORP-IM" target="_blank">Mega</a>
         </div>
-   </div>
+      </div>
+    </div>
     <!-- Episode 3 -->
     <div class="episode">
-        <img src="IMAGES/EP_3_Thumbnail.png" alt="Episode 3 Thumbnail">
-        </a>
-        <p>The Master Swordsman</p>
-        <div class="dropdown">
-          <button class="episode-watch-btn" onclick="toggleDropdown('dropdown3')">Watch</button>
-          <div class="dropdown-content" id="dropdown3">
-            <a href="EPISODES/Fixed_Piece_Episode_3_Chapter_3-5.torrent" download>Torrent</a>
-            <hr>
-            <a href="https://mega.nz/file/5W8RiQQC#5_NmCqMQ_u2Ee6Qk3Vs8hgfpcggj9ATGyiMoIZoOZ2M" target="_blank">Mega</a>
-          </div>
+      <img src="IMAGES/EP_3_Thumbnail.png" alt="Episode 3 Thumbnail">
+      <p>The Master Swordsman</p>
+      <div class="dropdown">
+        <button class="episode-watch-btn">Watch</button>
+        <div class="dropdown-content">
+          <a href="EPISODES/Fixed_Piece_Episode_3_Chapter_3-5.torrent" download>Torrent</a>
+          <hr>
+          <a href="https://mega.nz/file/5W8RiQQC#5_NmCqMQ_u2Ee6Qk3Vs8hgfpcggj9ATGyiMoIZoOZ2M" target="_blank">Mega</a>
         </div>
-   </div>
+      </div>
+    </div>
     <!-- Episode 4 -->
     <div class="episode">
-        <img src="IMAGES/EP_4_Thumbnail.png" alt="Episode 4 Thumbnail">
-        </a>
-        <p>The First</p>
-        <div class="dropdown">
-          <button class="episode-watch-btn" onclick="toggleDropdown('dropdown4')">Watch</button>
-          <div class="dropdown-content" id="dropdown4">
-            <a href="EPISODES/Fixed_Piece_Episode_4_Chapter_5-7.mp4.torrent" download>Torrent</a>
-            <hr>
-            <a href="https://mega.nz/file/wG0HERxK#7vYuLQf5prFLuJEstMqgFwwU4neib_Yg9RmCU7xHnso" target="_blank">Mega</a>
-          </div>
+      <img src="IMAGES/EP_4_Thumbnail.png" alt="Episode 4 Thumbnail">
+      <p>The First</p>
+      <div class="dropdown">
+        <button class="episode-watch-btn">Watch</button>
+        <div class="dropdown-content">
+          <a href="EPISODES/Fixed_Piece_Episode_4_Chapter_5-7.mp4.torrent" download>Torrent</a>
+          <hr>
+          <a href="https://mega.nz/file/wG0HERxK#7vYuLQf5prFLuJEstMqgFwwU4neib_Yg9RmCU7xHnso" target="_blank">Mega</a>
         </div>
-   </div>
+      </div>
     </div>
   </div>
 
-  <script>
-    function toggleDropdown(id) {
-      var dropdownContent = document.getElementById(id);
-  
-      if (dropdownContent.classList.contains("show")) {
-        dropdownContent.classList.remove("show");
-      } else {
-        dropdownContent.classList.toggle("show");
-  
-        if (window.innerWidth <= 1250) {
-        var container = dropdownContent.closest(".episode-container");
-        var episodes = container.querySelectorAll(".episode");
-        var clickedEpisode = dropdownContent.closest(".episode");
-        var dropdownIndex = -1;
-  
-        episodes.forEach(function(episode, index) {
-          if (episode === clickedEpisode) {
-            dropdownIndex = index;
-          }
-  
-          if (dropdownIndex !== -1 && index > dropdownIndex) {
-            if (dropdownContent.classList.contains("show")) {
-              episode.style.transform = "translateY(120px)";
-            } else {
-              episode.style.transform = "translateY(0)";
-            }
-          }
-        });
-      }
-    }
-  }
-  
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.episode-watch-btn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-  
-            var container = openDropdown.closest(".episode-container");
-            var episodes = container.querySelectorAll(".episode");
-            episodes.forEach(function(episode) {
-              episode.style.transform = "translateY(0)";
-            });
-          }
-        }
-      }
-    }
-  </script>
-  </body>
-  </html>
-  
+  <script src="script.js"></script>
+</body>
+</html>
