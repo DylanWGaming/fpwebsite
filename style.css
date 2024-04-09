@@ -58,10 +58,8 @@ button {
   font-weight: bold;
 }
 .logo {
-  position: static;
   display: block;
   margin-left: 17px;
-  z-index: 5;
 }
 .field {
   padding: 10px;
@@ -116,7 +114,6 @@ font-size: 32px;
 .episode img {
   max-width: 480px; 
   max-height: 360px; 
-  margin-top: 37px;
 }
 
 .romance-dawn {
@@ -227,6 +224,9 @@ hr {
 @media only screen and (max-width: 2040px) {
   body {
     padding-bottom: 200px;
+  }
+  .episode img {
+  margin-top: 37px;
   }
 }
 
