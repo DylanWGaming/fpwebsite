@@ -58,8 +58,10 @@ button {
   font-weight: bold;
 }
 .logo {
+  position: static;
   display: block;
   margin-left: 17px;
+  z-index: 5;
 }
 .field {
   padding: 10px;
