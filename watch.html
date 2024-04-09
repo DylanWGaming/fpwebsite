@@ -30,46 +30,117 @@
     </div>
   </div>
   <br>
-
-  <br>  <hr>  <h1 class="romance-dawn">Romance Dawn</h1>
+  <hr>
+  <h1 class="romance-dawn">Romance Dawn</h1>
   <div class="episode-container">
     <!-- Episode 1 -->
     <div class="episode">
-      <a href="e1.html">
-        <img src="IMAGES/EP_1_Thumbnail.png" alt="Episode 1 Thumbnail">
+      <img src="IMAGES/EP_1_Thumbnail.png" alt="Episode 1 Thumbnail">
       </a>
-      <br>
-      <p>Episode 1</p>
-      <a href="e1.html" class="episode-link"><button>Watch</button></a>
+      <p>Romance Dawn</p>
+      <div class="dropdown">
+        <button class="episode-watch-btn" onclick="toggleDropdown('dropdown1')">Watch</button>
+        <div class="dropdown-content" id="dropdown1">
+          <a href="EPISODES/Fixed_Piece_Episode_1_Chapter_1.torrent" download>Torrent</a>
+        </div>
+      </div>
     </div>
     <!-- Episode 2 -->
     <div class="episode">
-        <a href="e2.html">
-            <img src="IMAGES/EP_2_Thumbnail.png" alt="Episode 2 Thumbnail">
+        <img src="IMAGES/EP_2_Thumbnail.png" alt="Episode 2 Thumbnail">
         </a>
-        <br>
-        <p>Episode 2</p>
-        <a href="e2.html" class="episode-link"><button>Watch</button></a>
-    </div>
+        <p>The Man in the Straw Hat</p>
+        <div class="dropdown">
+          <button class="episode-watch-btn" onclick="toggleDropdown('dropdown2')">Watch</button>
+          <div class="dropdown-content" id="dropdown2">
+            <a href="EPISODES/Fixed_Piece_Episode_2_Chapter_2.torrent" download>Torrent</a>
+            <hr>
+            <a href="https://mega.nz/file/RGcykIwY#PsxwYYqpwwjtWK1Q9Iyt97sYWsvSeZm3xKlglORP-IM" target="_blank">Mega</a>
+          </div>
+        </div>
+   </div>
     <!-- Episode 3 -->
     <div class="episode">
-        <a href="e3.html">
-            <img src="IMAGES/EP_3_Thumbnail.png" alt="Episode 3 Thumbnail">
+        <img src="IMAGES/EP_3_Thumbnail.png" alt="Episode 3 Thumbnail">
         </a>
-        <br>
-        <p>Episode 3</p>
-        <a href="e3.html" class="episode-link"><button>Watch</button></a>
-    </div>
+        <p>The Master Swordsman</p>
+        <div class="dropdown">
+          <button class="episode-watch-btn" onclick="toggleDropdown('dropdown3')">Watch</button>
+          <div class="dropdown-content" id="dropdown3">
+            <a href="EPISODES/Fixed_Piece_Episode_3_Chapter_3-5.torrent" download>Torrent</a>
+            <hr>
+            <a href="https://mega.nz/file/5W8RiQQC#5_NmCqMQ_u2Ee6Qk3Vs8hgfpcggj9ATGyiMoIZoOZ2M" target="_blank">Mega</a>
+          </div>
+        </div>
+   </div>
     <!-- Episode 4 -->
     <div class="episode">
-        <a href="e4.html">
-            <img src="IMAGES/EP_4_Thumbnail.png" alt="Episode 4 Thumbnail">
+        <img src="IMAGES/EP_4_Thumbnail.png" alt="Episode 4 Thumbnail">
         </a>
-        <br>
-        <p>Episode 4</p>
-        <a href="e4.html" class="episode-link"><button>Watch</button></a>
+        <p>The First</p>
+        <div class="dropdown">
+          <button class="episode-watch-btn" onclick="toggleDropdown('dropdown4')">Watch</button>
+          <div class="dropdown-content" id="dropdown4">
+            <a href="EPISODES/Fixed_Piece_Episode_4_Chapter_5-7.mp4.torrent" download>Torrent</a>
+            <hr>
+            <a href="https://mega.nz/file/wG0HERxK#7vYuLQf5prFLuJEstMqgFwwU4neib_Yg9RmCU7xHnso" target="_blank">Mega</a>
+          </div>
+        </div>
+   </div>
     </div>
   </div>
+
+  <script>
+    function toggleDropdown(id) {
+      var dropdownContent = document.getElementById(id);
   
-</body>
-</html>
+      if (dropdownContent.classList.contains("show")) {
+        dropdownContent.classList.remove("show");
+      } else {
+        dropdownContent.classList.toggle("show");
+  
+        if (window.innerWidth <= 1250) {
+        var container = dropdownContent.closest(".episode-container");
+        var episodes = container.querySelectorAll(".episode");
+        var clickedEpisode = dropdownContent.closest(".episode");
+        var dropdownIndex = -1;
+  
+        episodes.forEach(function(episode, index) {
+          if (episode === clickedEpisode) {
+            dropdownIndex = index;
+          }
+  
+          if (dropdownIndex !== -1 && index > dropdownIndex) {
+            if (dropdownContent.classList.contains("show")) {
+              episode.style.transform = "translateY(120px)";
+            } else {
+              episode.style.transform = "translateY(0)";
+            }
+          }
+        });
+      }
+    }
+  }
+  
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.episode-watch-btn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+  
+            var container = openDropdown.closest(".episode-container");
+            var episodes = container.querySelectorAll(".episode");
+            episodes.forEach(function(episode) {
+              episode.style.transform = "translateY(0)";
+            });
+          }
+        }
+      }
+    }
+  </script>
+  </body>
+  </html>
+  
