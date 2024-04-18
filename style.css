@@ -116,8 +116,8 @@ font-size: 32px;
 }
 
 .episode img {
-  max-width: 480px; 
-  max-height: 360px; 
+  max-width: 360px; 
+  max-height: 270px; 
   flex-grow: 1;
   text-align: center;
 }
