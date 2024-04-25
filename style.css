@@ -117,7 +117,7 @@ font-size: 32px;
 
 .episode img {
   max-width: 360px; 
-  max-height: 270px; 
+  max-height: 270px ; 
   flex-grow: 1;
   text-align: center;
 }
@@ -139,8 +139,9 @@ font-size: 32px;
   font-weight: bold;
 }
 
-.egghead-title {
-  margin-right: 25px
+.egghead-thumbnail {
+  max-width: 360px;
+  max-height: 270px;
 }
 
 .episode button:hover {
@@ -332,6 +333,12 @@ hr {
         font-weight: bold;
         font-size: 2em; 
       }
+      .egghead {
+        text-align: center;
+        font-weight: bold;
+        margin-right: 0px;
+        font-size: 2em; 
+      }
       
       .episode button:hover {
         background-color: #ADD8E6;
@@ -443,6 +450,11 @@ hr {
         margin-bottom: 25px; 
     }    
     .romance-dawn {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em; 
+      }
+      .egghead {
         text-align: center;
         font-weight: bold;
         font-size: 2em; 
