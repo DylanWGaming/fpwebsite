@@ -339,6 +339,9 @@ hr {
         margin-right: 0px;
         font-size: 2em; 
       }
+      .egghead-title {
+        text-align: center;
+      }
       
       .episode button:hover {
         background-color: #ADD8E6;
