@@ -37,7 +37,7 @@ document.querySelectorAll(".episode-watch-btn").forEach(function(button) {
 
           if (dropdownIndex !== -1 && index > dropdownIndex) {
             if (dropdown.classList.contains("show")) {
-              episode.style.transform = "translateY(120px)";
+              episode.style.transform = "translateY(150px)";
             } else {
               episode.style.transform = "translateY(0)";
             }
