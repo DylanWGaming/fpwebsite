@@ -233,6 +233,10 @@ hr {
     transform: rotate(180deg);
 }
 
+.episode {
+  margin-top: 50px;
+}
+
 .episode-number {
   position: absolute;
   top: 10px;
@@ -248,9 +252,6 @@ hr {
   body {
     padding-bottom: 200px;
   } 
-  .episode {
-    margin-top: 50px;
-  }
 }
 
 /* Adjustments for smaller screens */

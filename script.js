@@ -24,7 +24,7 @@ document.querySelectorAll(".episode-watch-btn").forEach(function(button) {
       dropdown.classList.add("show");
       this.classList.add("active");
 
-      if (window.innerWidth <= 2040) {
+      if (window.innerWidth <= 2560) {
         var container = dropdown.closest(".episode-container");
         var episodes = container.querySelectorAll(".episode");
         var clickedEpisode = dropdown.closest(".episode");
