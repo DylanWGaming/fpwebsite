@@ -248,6 +248,11 @@ hr {
   font-size: 12px;
 }
 
+.egghead-img-center {
+  display: block;
+  margin: 0 auto;
+}
+
 }
 
 .egghead-title {
