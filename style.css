@@ -391,6 +391,11 @@ hr {
       .episode {
         transition: transform 0.3s ease; 
       }
+
+      .egghead-img-center {
+        display: block;
+        margin: 0 auto;
+      }
     }
 
 /* Adjustments for mobile screens */
