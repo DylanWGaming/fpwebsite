@@ -132,6 +132,11 @@ font-size: 32px;
   margin-bottom: 150px; 
 }
 
+
+.egghead-tall-thumbnail {
+  padding-top: 40px !important;
+}
+
 .egghead {
   text-align: center;
   margin-right: 40px;
@@ -232,6 +237,7 @@ hr {
     content: "\25B2";
     transform: rotate(180deg);
 }
+
 
 .episode {
   margin-top: 50px;
